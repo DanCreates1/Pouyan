@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(0, 0, 0);
+  list-style: none;
+  
+}
+
+body {
+  min-width: 100vh;
+  background: url('bakground.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#h1f {
+  text-align: center;
+  background-color: rgb(18, 15, 15);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: white;
+}
+
+#github {
+  color: white;
+  text-decoration: none;
+  size: 40px;
+}
+
+#js {
+  color: white;
+  background-color: white;
+  display: flex;
+}
+
+#timer {
+  color: white;
+}
+
+#copyrightGmail {
+  color: white;
+}
+
+.navbar {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+section{
+width: 100%;
+}
+
+.navbar a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  background-color: rgb(18, 15, 15);
+}
+nav a:hover,
+nav a.active{
+  color: #0ef;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.5s ease;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+header {
+  position: relative; 
+}
+
+#aboutMe {
+  min-height: 100vh;
+  
+  width: 600px;
+  height: 700px;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: white;
+}
+#timer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+
+#wordAnimation {
+  margin-top: auto;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: rgb(18, 15, 15);
+  
+}
+#copyright{
+  color: #0ef;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+section#about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.paragraph1{
+  size: 4px;
+}
+section{
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.skill{
+  width: 500px;
+  margin: 60px auto;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(199, 199, 199, 0.25), 0 10px 10px rgba(201, 197, 197, 0.22);
+}
+.skill li{
+  margin: 20px 0;
+  padding: 10px;
+}
+.bar{
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(199, 199, 199, 0.25), 0 1px 2px rgba(201, 197, 197, 0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0, 0,0,0.25),0 10px 10px hsla(0, 0%, 100%, 0.22);
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236, 0, 140,1)0%, rgba(252, 103, 103, 1.0)100%);
+}
+
+.html{
+  width: 90%;
+  animation: html 3s;
+  color: #0ef;
+}
+.css{
+  width: 70%;
+  animation: css 3s;
+  color: #0ef;
+}
+.python{
+  width: 70%;
+  animation: python 3s;
+  color: #0ef;
+}
+@keyframes html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+@keyframes python{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+.conectme{
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 800px;
+  height: 400px;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: white;
+  gap: 100px;
+}
+
+/* For screens smaller than 600px (phones) */
+@media only screen and (max-width: 600px) {
+  #h1f {
+    font-size: 24px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar a {
+    padding: 10px;
+  }
+  #aboutMe {
+    width: 90%;
+    height: auto;
+  }
+  .conectme {
+    width: 90%;
+    height: auto;
+  }
+  .skill {
+    width: 90%;
+  }
+}
+
+/* For screens between 600px and 1024px (tablets) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  #aboutMe {
+    width: 70%;
+  }
+  .conectme {
+    width: 70%;
+  }
+  .skill {
+    width: 70%;
+  }
+}
+
+/* For screens larger than 1024px (desktops) */
+@media only screen and (min-width: 1024px) {
+  
+  #h1f {
+    font-size: 36px;
+  }
+  .navbar {
+    justify-content: flex-end;
+  }
+  .navbar a {
+    padding: 15px;
+  }
+  #aboutMe {
+    width: 600px;
+    height: 700px;
+  }
+  .conectme {
+    width: 800px;
+    height: 400px;
+  }
+  .skill {
+    width: 500px;
+  }
+}
+/* For screens smaller than 600px (phones) */
+@media only screen and (max-width: 600px) {
+  #h1f {
+    font-size: 24px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar a {
+    padding: 10px;
+  }
+  #aboutMe {
+    width: 90%;
+    height: auto;
+  }
+  .conectme {
+    width: 90%;
+    height: auto;
+  }
+  .skill {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  #aboutMe {
+    width: 70%;
+  }
+  .conectme {
+    width: 70%;
+  }
+  .skill {
+    width: 70%;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  #h1f {
+    font-size: 36px;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .navbar a {
+    padding: 15px;
+  }
+  #aboutMe {
+    width: 600px;
+    height: 700px;
+  }
+  .conectme {
+    width: 800px;
+    height: 400px;
+  }
+  .skill {
+    width: 500px;
+  }
+}
