@@ -49,7 +49,7 @@ function animateTyping(text, index, wordAnimationDiv) {
 }
 
 const wordAnimationDiv = document.getElementById('wordAnimation');
-animateTyping("I am ouyan, a full stack developer", 0, wordAnimationDiv);
+animateTyping("I am Pouyan, a full stack developer", 0, wordAnimationDiv);
 
 
 setInterval(updateAgeAndTimer, 100);
