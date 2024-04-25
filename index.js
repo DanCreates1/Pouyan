@@ -1,4 +1,4 @@
-const birthDate = new Date('2010-05-17'); 
+const birthDate = new Date('2010-05-18'); 
 const creationDate = new Date('2024-04-1'); 
 
 function calculateAge() {
