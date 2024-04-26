@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   justify-content: center;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
 }
 section{
