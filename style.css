@@ -9,6 +9,7 @@
   background-color: rgb(0, 0, 0);
   list-style: none;
   color: rgb(0, 0, 0);
+  
 }
 
 body {
@@ -26,6 +27,26 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
   color: white;
+}
+body {
+  font-size: 1rem; /* 16px */
+  margin: 1.25rem; /* 20px */
+  padding: 0.625rem; /* 10px */
+}
+
+h1 {
+  font-size: 1.5rem; /* 24px */
+  margin-bottom: 1rem; /* 16px */
+}
+
+p {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+#h134{
+  color: aqua;
+  text-align: center;
+  background-color: rgb(18, 15, 15);
 }
 
 #github {
