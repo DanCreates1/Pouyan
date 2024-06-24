@@ -1,12 +1,18 @@
 const birthDate = new Date('2010-05-18'); 
-const creationDate = new Date('2024-04-2'); 
+const creationDate = new Date('2024-03-15'); 
+let userName = "";
+
+while(userName == ""){
+   userName = window.prompt("Enter your name:")
+}
+document.getElementById("h134").innerHTML = userName;
 
 function calculateAge() {
   const currentDate = new Date();
   const ageInMilliseconds = currentDate - birthDate;
   const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25); 
 
-  return ageInYears.toFixed(9); 
+  return ageInYears.toFixed(5); 
 }
 
 function calculateTimeElapsed() {
@@ -49,9 +55,10 @@ function animateTyping(text, index, wordAnimationDiv) {
 }
 
 const wordAnimationDiv = document.getElementById('wordAnimation');
-animateTyping("I am Pouyan, a full stack developer", 0, wordAnimationDiv);
+animateTyping("I'am Pouyan, a full stack developer", 0, wordAnimationDiv);
 
 
 setInterval(updateAgeAndTimer, 100);
 
 updateAgeAndTimer();
+let a = 0;
