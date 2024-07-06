@@ -13,7 +13,8 @@
 }
 
 body {
-  min-width: 100vh;
+  min-width: 100vw;
+  min-hight: 100vh;
   background: url('bakground.jpg') no-repeat;
   background-size: cover;
   background-position: center;
