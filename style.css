@@ -12,6 +12,10 @@
   
 }
 
+.html{
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 100vw;
   min-hight: 100vh;
